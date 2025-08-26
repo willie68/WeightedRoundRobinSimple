@@ -9,10 +9,11 @@ Procedure:
 Each item has a weight and a weight buffer.
 In each round, the buffer for each item is increased by its own weight. The item with the highest buffer level is selected. This level is then decreased by the sum of all weights.
 Example:
-Item 1: Weight 9
-Item 2: Weight 6
-Item 3: Weight 2
-Item Output: 1,2,1,3,2,1,1,2,1,2,1,3,1,2,1,2,1
+
+- Item 1: Weight 9
+- Item 2: Weight 6
+- Item 3: Weight 2
+- Item Output: 1,2,1,3,2,1,1,2,1,2,1,3,1,2,1,2,1
 
 | Step | weight buffer | item choosed | weight buffer |
 | ---- | ------------- | ------------ | ------------- |
