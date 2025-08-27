@@ -38,6 +38,7 @@ type wrrSimple[E any] struct {
 	total int
 }
 
+// checking interfacae compatibility
 var (
 	_ RoundRobin[any] = &wrrSimple[any]{}
 	_ WRRSimple[any]  = &wrrSimple[any]{}
@@ -50,6 +51,7 @@ func New[E any]() WRRSimple[E] {
 	}
 }
 
+// GetNext getting the next
 func (w *wrrSimple[E]) GetNext() (*E, error) {
 	w.Lock()
 	defer w.Unlock()
