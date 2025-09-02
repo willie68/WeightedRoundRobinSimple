@@ -1,0 +1,11 @@
+$ go mod tidy
+
+$ go test ./...
+ok      github.com/willie68/WeightedRoundRobinSimple    1.904s
+
+$ git commit -m "wrr: release v0.1.0"
+$ git tag v0.1.0
+
+$ git push origin v0.1.0
+
+$ GOPROXY=proxy.golang.org go list -m github.com/willie68/WeightedRoundRobinSimple@v0.1.0
